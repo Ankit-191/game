@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+* {
+  list-style: none !important;
+  text-decoration: none !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
-
-.App-link {
-  color: #61dafb;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header secition */
+.icon_hover:hover svg {
+  fill: var(--clr-blue-500);
+}
+.icon_hover:hover svg g {
+  fill: var(--clr-blue-500);
+}
+.icon_hover:hover span {
+  color: var(--clr-blue-500);
+}
+.icon_active svg {
+  fill: var(--clr-blue-500);
+}
+.icon_active svg g {
+  fill: var(--clr-blue-500);
+}
+.icon_active span {
+  color: var(--clr-blue-500);
+}
+/* Balance secition */
+.balance_card {
+  background: var(--web-blueee, #304daf);
+  box-shadow: 20px 20px 40px -12px rgba(0, 0, 0, 0.25);
+}
+.btn_hvoer {
+  transition: all 0.3s linear;
+}
+.btn_hvoer:hover {
+  color: var(--clr-gray-500);
+}
+.clr_btn {
+  width: 150px;
+}
+.colors {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
 }
